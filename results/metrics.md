@@ -59,7 +59,7 @@ Issues detected in noisy data: 7
 | Days caught earlier       | 5 days (vs. manual) |
 | Electricity tariff        | $0.12 / kWh |
 
-**Result:** catching soiling 5 days earlier recovers
+**Result:** catching soiling 5 days earlier recovers.
 **135.0 kWh** worth **$16.2** per event.
 
 ---
