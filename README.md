@@ -53,10 +53,10 @@ The app opens in your browser. Press one of the three scenario buttons to see th
 
 | Step | What it means | How we do it |
 |------|---------------|--------------|
-| **Detect** | Notice that output is lower than it should be | [HOW WE DETECT, TO CONFIRM] |
-| **Categorize** | Say what kind of problem it is | [PROBLEM TYPES WE COVER, TO CONFIRM] |
-| **Prioritize** | Rank problems by money lost | [HOW MONEY LOST IS CALCULATED, see docs/assumptions.md, TO CONFIRM] |
-| **Explain** | Tell the owner what to do in plain language | [HOW THE MESSAGE IS GENERATED, TO CONFIRM] |
+| **Detect** | Notice that output is lower than it should be | Compares actual output with what we expect for that hour. On our test data it caught 2 of 2 injected faults, with 1 false alarm on clean data, and still caught the fault with noise added and 5% of rows dropped. [DETECTION METHOD, e.g. threshold or rule, TO CONFIRM with Member A] |
+| **Categorize** | Say what kind of problem it is | Two problem types: dust on the panels (soiling) and an equipment fault (inverter). The Check card turns orange for a problem and green when all is clear. [ADD ANY OTHER TYPES THE CODE HANDLES, TO CONFIRM] |
+| **Prioritize** | Rank problems by money lost | Money lost per day = daily output x dust loss x tariff, then x days of earlier detection (see `docs/assumptions.md`). Example home, assumed: a fault costs about RM 154 over 14 days, and one cleaning pays for itself after about 60 days of 22% dust loss. [CONFIRM THE APP SHOWS A RANKING, TO CONFIRM] |
+| **Explain** | Tell the owner what to do in plain language | One briefing card with Outlook (tomorrow's expected output), Check (the problem found), Do (what to do) and Battery (how to use stored power). No login, no dashboard. [HOW THE MESSAGE IS GENERATED, e.g. written by rules in `src/explain.py`, TO CONFIRM] |
 
 ## What we deliberately did not build
 
