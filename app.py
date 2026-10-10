@@ -88,7 +88,7 @@ FALLBACK_SCENARIOS = {
 
 # ── Page setup ────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Tomorrow's Solar Plan",
+    page_title="Solar Plan",
     page_icon="☀️",
     layout="centered",   # phone-card feel — centred, not wide
 )
