@@ -20,6 +20,15 @@ except ImportError:
     PIPELINE_READY = False
 
 from src.explain import build_briefing
+from src.adapter import adapt   # converts pipeline output -> explain.py format
+
+
+# ── Button names -> names that pipeline.run_scenario() understands ────────────
+SCENARIO_KEYS = {
+    "Normal day":     "normal",
+    "Dusty panels":   "dusty",
+    "Inverter fault": "fault",
+}
 
 
 # ── Hardcoded fallback data (matches CONTRACT columns) ────────────────────────
@@ -130,12 +139,13 @@ st.markdown("""
 
 def get_scenario(name: str):
     """
-    Returns (plan dict, issues DataFrame).
+    Returns (plan dict, issues DataFrame) in the format explain.py expects.
     Uses the real pipeline if available, otherwise the hardcoded fallback.
     """
     if PIPELINE_READY:
-        # run_scenario returns (plan, issues) — Member A's function
-        return run_scenario(name)
+        # run_scenario returns (plan, issues) — Member A's function.
+        # adapt() converts them to the keys explain.py needs.
+        return adapt(*run_scenario(SCENARIO_KEYS[name]))
     else:
         # Fallback: use our hardcoded demo data
         data = FALLBACK_SCENARIOS.get(name, FALLBACK_SCENARIOS["Normal day"])
@@ -206,7 +216,7 @@ else:
 # ── Optional small chart: forecast kWh vs a reference bar ────────────────────
 with st.expander("📊 Quick forecast glance", expanded=False):
     # Simple bar showing tomorrow's forecast vs a "typical good day" baseline
-    typical_kwh = 24.0
+    typical_kwh = plan.get("typical_kwh", 24.0)
     chart_data = pd.DataFrame({
         "kWh": [plan["forecast_kwh"], typical_kwh],
     }, index=["Tomorrow", "Typical good day"])
