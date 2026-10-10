@@ -14,7 +14,7 @@ For a home solar owner, the tool:
 3. Ranks those problems by how much money they cost.
 4. Tells the owner what to do, in plain language.
 
-## The problem and the user
+The problem and the user
 
 **User:** A home solar owner who does not closely watch their system.
 **Problem:** Output can drop for days before the owner notices and the owner may not know the cause or what to do about it.
@@ -28,10 +28,9 @@ First Method: Run on terminal
 git clone <repo-link>
 py -m pip install -r requirements.txt
 py -m streamlit run app.py
-
+```
 Second Method: Deployment Link
 https://dormathon-modelprototype.streamlit.app/
-```
 
 The app opens in your browser. Press one of the three scenario buttons to see the result.
 
