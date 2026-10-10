@@ -1,4 +1,4 @@
-# Tomorrow's Solar Plan
+# Solar Prediction Model
 
 A hackathon prototype for **Track 1: Predictive Model (renewable energy forecasting and optimization)**.
 
@@ -10,38 +10,29 @@ For a home solar owner, the tool:
 3. Ranks those problems by how much money they cost.
 4. Tells the owner what to do, in plain language.
 
-There is no dashboard and no login. The owner gets a short answer they can act on.
-
 ## The problem and the user
 
 **User:** A home solar owner who does not closely watch their system.
-**Problem:** Output can drop for days before the owner notices, and the owner may not know the cause or what to do about it. Existing inverter apps [WHAT THEY DO AND DON'T DO, TO CONFIRM FROM OUR COMPARISON CHECKLIST].
-**Evidence from real people:** "[INSERT REAL QUOTE]" ([NAME OR INITIALS], [DATE])
+**Problem:** Output can drop for days before the owner notices and the owner may not know the cause or what to do about it.
 
-**The question we are trying to answer:** Does the model help someone make a better decision, and can we prove it? Our proof is in `results/metrics.md` [TO CONFIRM THIS FILE EXISTS AND IS FILLED IN].
+**The question we are trying to answer:** Does the model help someone make a better decision, and can we prove it? Our proof is in `results/metrics.md`
 
 ## How to install and run
 
 ```
-cd ..
-git clone <your-repo-link> test-clone
+git clone <repo-link>
 cd test-clone
 py -m pip install -r requirements.txt
 py -m streamlit run app.py
 ```
 
-Python version: [TO CONFIRM]
-
 The app opens in your browser. Press one of the three scenario buttons to see the result.
 
 ## Repo structure
 
-[TO CONFIRM: check this against the actual folders before submitting]
-
 ```
 .
 ├── app.py                 # The Streamlit app (demo)
-├── requirements.txt       # Python dependencies
 ├── src/                   # Model and logic code
 ├── results/
 │   └── metrics.md         # Proof numbers used in the pitch
