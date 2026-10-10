@@ -3,14 +3,14 @@
 Every number here is TO CONFIRM until we have a source. Do not quote any of these in the pitch until the "Status" column says Confirmed.
 
 | Assumption | Value | Source or reason | Status |
-|------------|-------|------------------|--------|
-| Home system size (kW) | TO CONFIRM | [e.g. typical size from an interview or an official source] | Not researched |
-| Electricity tariff (price per kWh) | TO CONFIRM | [e.g. local utility tariff page, link here] | Not researched |
-| Cost of one panel cleaning | TO CONFIRM | [e.g. quote from a local cleaner, link or name] | Not researched |
-| Typical energy loss from dust (%) | TO CONFIRM | [e.g. published study or installer guidance, link here] | Not researched |
-| Days of earlier detection vs. owner noticing alone | TO CONFIRM | [from interviews, or from our own test results in results/metrics.md] | Not researched |
-| Average daily output of the example system (kWh) | TO CONFIRM | [from the dataset we use, state which one] | Not researched |
-| Currency and unit used in the demo | TO CONFIRM | [e.g. RM per kWh] | Not decided |
+|---|---|---|---|
+| Home system size (kW) | 4–12 kW; example home 4.7 kWp | Cleaning-company size guide lists 4, 6, 8, 12 kW by house type (terrace to bungalow). Borneo Post example: 10 panels, 4.7 kWp. | Researched, TO CONFIRM (vendor and news source) |
+| Electricity tariff (price per kWh) | 27.03 sen energy + 4.55 capacity + 12.85 network = 44.43 sen/kWh (about RM 0.44), before tax, AFA and rebates, up to 1,500 kWh/month. RM 10/month retail charge on top. | TNB domestic tariff from 1 July 2025, as reported by SoyaCincau | Researched, TO CONFIRM against tnb.com.my |
+| Cost of one panel cleaning | RM 150–400 per session, depending on system size. About RM 300/year for 2 cleans. | Trexon Malaysia maintenance guide (a solar installer, so a vendor estimate) | Researched, TO CONFIRM with a real quote |
+| Typical energy loss from dust (%) | About 5% typical; about 2% with year-round rain | NREL, as cited by Aurora Solar | Researched |
+| Days of earlier detection vs. owner noticing alone | [NO PUBLIC FIGURE FOUND] | Needs our interviews or our own test results in results/metrics.md | Not researched |
+| Average daily output of the example system (kWh) | [PICK ONE, see note below] | State which dataset | Not decided |
+| Currency and unit used in the demo | RM per kWh | Matches the tariff source above | Decided |
 
 ## How the impact estimate will be built
 
