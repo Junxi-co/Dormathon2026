@@ -158,7 +158,7 @@ if "scenario" not in st.session_state:
 
 
 # ── Top section: title + scenario buttons ────────────────────────────────────
-st.markdown('<p class="solar-title">☀️ Tomorrow\'s Solar Plan</p>', unsafe_allow_html=True)
+st.markdown('<p class="solar-title">☀️ Solar Plan</p>', unsafe_allow_html=True)
 st.caption("Tap a scenario to see what the day looks like.")
 
 col1, col2, col3 = st.columns(3)
