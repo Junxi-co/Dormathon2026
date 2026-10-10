@@ -39,9 +39,3 @@ What this means: a short dusty spell costs less than one cleaning. The app's val
 
 Still TO CONFIRM: daily output (5.46 kWh/day per kW is a model figure for Sepang), the 14 days (replace the 1-day tool lag with our real detection lag), and the tariff, which is RM 0.44 if used at home or RM 0.27 if exported (real export rate not found).
 
-
-## Rules for this file
-- If a value comes from an interview, write the interview ID in the source column.
-- If a value comes from the internet, paste the link and the date we read it.
-- If we are guessing, say "team estimate" and show it as a range, not a single number.
-- Whatever we say in the pitch must match this table.
