@@ -1,8 +1,8 @@
-# Tomorrow's Solar Plan
+ Tomorrow's Solar Plan
 
-A hackathon prototype for **Track 1: Predictive Model (renewable energy forecasting and optimization)**.
+A hackathon prototype for Track 1: Predictive Model (renewable energy forecasting and optimization).
 
-## What it does
+ What it does
 
 For a home solar owner, the tool:
 1. Forecasts tomorrow's solar output.
@@ -12,11 +12,11 @@ For a home solar owner, the tool:
 
 There is no dashboard and no login. The owner gets a short answer they can act on.
 
-## The problem and the user
+The problem and the user
 
-**User:** A home solar owner who does not closely watch their system.
-**Problem:** Output can drop for days before the owner notices, and the owner may not know the cause or what to do about it. Existing inverter apps [WHAT THEY DO AND DON'T DO, TO CONFIRM FROM OUR COMPARISON CHECKLIST].
-**Evidence from real people:** "[INSERT REAL QUOTE]" ([NAME OR INITIALS], [DATE])
+User: A home solar owner who does not closely watch their system.
+Problem: Output can drop for days before the owner notices, and the owner may not know the cause or what to do about it. Existing inverter apps [WHAT THEY DO AND DON'T DO, TO CONFIRM FROM OUR COMPARISON CHECKLIST].
+Evidence from real people:** "[INSERT REAL QUOTE]" ([NAME OR INITIALS], [DATE])
 
 **The question we are trying to answer:** Does the model help someone make a better decision, and can we prove it? Our proof is in `results/metrics.md` [TO CONFIRM THIS FILE EXISTS AND IS FILLED IN].
 
@@ -50,8 +50,7 @@ The app opens in your browser. Press one of the three scenario buttons to see th
 │   └── slides_outline.md  # 5-slide outline
 └── README.md
 ```
-
-## How it addresses Detect, Categorize, Prioritize, Explain
+ How it addresses Detect, Categorize, Prioritize, Explain
 
 | Step | What it means | How we do it |
 |------|---------------|--------------|
@@ -77,6 +76,6 @@ All impact numbers are assumptions listed in `docs/assumptions.md` and are marke
 
 ## Team
 
-- Member A: [NAME, ROLE]
-- Member B: [NAME, ROLE]
-- Member C: [NAME], product, validation and pitch
+- Member A: Jun Xi, 
+- Member B: Hong Jun, 
+- Member C: Cheng Hao, product, validation and pitch
