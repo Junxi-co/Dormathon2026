@@ -21,8 +21,7 @@ For a home solar owner, the tool:
 
 ```
 git clone <repo-link>
-cd test-clone
-py -m pip install pandas numpy scikit-learn streamlit
+py -m pip install -r RequiredLib.txt
 py -m streamlit run app.py
 ```
 
