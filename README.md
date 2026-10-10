@@ -1,10 +1,8 @@
-# ☀️ Tomorrow's Solar Plan: Solar Prediction Model
+# Solar Prediction Model
 
-**Dormathon 2026 · Track 1: Predictive Model (Predict Early, Decide Better)**
+**Dormathon 2026 · Track 1: Predictive Model**
 
-🔗 **Live app:** https://dormathon-modelprototype.streamlit.app/
-
-A prototype that predicts tomorrow's solar output, spots problems that quietly reduce it, and tells a home solar owner what to do about them in plain language.
+Deployed App: https://dormathon-modelprototype.streamlit.app/
 
 ---
 
@@ -46,42 +44,26 @@ For a home solar owner, the tool:
 3. **Ranks** those problems by how much money they cost.
 4. **Tells the owner what to do**, in plain language.
 
-There is no dashboard and no login. The owner gets a short answer they can act on.
-
 The app shows one briefing card with four parts: **Outlook** (tomorrow's expected output), **Do** (the best time to run heavy appliances), **Battery** (whether a grid top-up is needed), and **Check** (the problem found and why). The Check card is orange for a problem and green when all is clear.
 
 ---
 
 ## How to run
 
-### Option 1: Open the live app
+### Option 1: Open the deployed app link
 
 https://dormathon-modelprototype.streamlit.app/
 
-Press one of the three scenario buttons (**Normal day**, **Dusty panels**, **Inverter fault**) to see the result. If the app shows a "wake up" button, click it and wait a moment.
+Press one of the three scenario buttons (**Normal day**, **Dusty panels**, **Inverter fault**) to see the result.
 
 ### Option 2: Run it on your computer
 
-Requires Python 3.10 or newer and Git. On Mac or Linux, use `python3` instead of `py`.
-
 ```
 git clone <repo-link>
-cd <repo-folder>
 py -m pip install -r requirements.txt
 py -m streamlit run app.py
 ```
 
-Run the last two commands from the project's top-level folder (the one containing `app.py`). The app opens in your browser.
-
-### Optional: print the evaluation report
-
-```
-py -m src.evaluate
-```
-
-This prints the accuracy and detection results and writes them to `results/metrics.md`.
-
----
 
 ## How it works: Detect, Categorize, Prioritize, Explain
 
@@ -135,22 +117,6 @@ Measured on our test data (details in [`results/metrics.md`](results/metrics.md)
 ```
 
 ---
-
-## What we deliberately did not build
-
-We built only what is needed to prove the idea and run the demo.
-
-- **No login or user accounts.** The owner should get an answer immediately.
-- **No generic dashboard.** The owner needs a decision, not a page of charts.
-- **No live connection to a real inverter.** The demo uses simulated data.
-- **No mobile app or notifications.** The demo is a single web app.
-- **No deep learning model.** A Random Forest is enough for 60 days of hourly data, trains in seconds, and is easy to explain.
-
-## Data and honesty note
-
-- All data is **simulated**: 60 days of hourly readings (irradiance, cloud cover, temperature, output). The "dusty" scenario has a slow output decline injected, and the "fault" scenario has a sudden near-zero drop injected.
-- The faults were injected by us, so detection results show the method works on known problems, not that it works on every real system.
-- All impact numbers are assumptions listed in `docs/assumptions.md` until we have a source.
 
 ## Limitations
 
