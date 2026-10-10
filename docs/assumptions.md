@@ -19,15 +19,26 @@ Every number here is TO CONFIRM until we have a source. Do not quote any of thes
 
 ## How the impact estimate will be built
 
-Fill in once the values above are confirmed. Keep it simple enough to explain out loud.
+## How the impact estimate is built
 
-```
-Money lost per day  = daily output (kWh) x dust loss (%) x tariff (per kWh)
+All inputs are assumptions until the Status column above says Confirmed.
+
+Inputs (example home): 4.7 kWp system, 25.7 kWh/day, RM 0.44/kWh, 14 days earlier detection, RM 150 per cleaning.
+
+Money lost per day = daily output (kWh) x dust loss (%) x tariff (per kWh)
 Money lost from late detection = money lost per day x days of earlier detection
 Net benefit of cleaning = money lost from late detection - cleaning cost
-```
 
-This formula is a draft structure only. The team should check that it matches how the model actually calculates "money lost" and change it if not. TO CONFIRM.
+| Case | Lost per day | Lost over 14 days | Net benefit of one cleaning | Break-even |
+|---|---|---|---|---|
+| Typical dust, 5% | RM 0.57 | RM 8 | -RM 142 | about 265 days |
+| Our test data, 22% | RM 2.49 | RM 35 | -RM 115 | about 60 days |
+| Inverter fault, 97% | RM 10.97 | RM 154 | not applicable (a repair cost, not a cleaning) | not applicable |
+
+What this means: a short dusty spell costs less than one cleaning. The app's value is telling the owner when dust has lasted long enough to be worth cleaning, and catching faults that cost over RM 150 in two weeks.
+
+Still TO CONFIRM: daily output (5.46 kWh/day per kW is a model figure for Sepang), the 14 days (replace the 1-day tool lag with our real detection lag), and the tariff, which is RM 0.44 if used at home or RM 0.27 if exported (real export rate not found).
+
 
 ## Rules for this file
 - If a value comes from an interview, write the interview ID in the source column.
