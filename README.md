@@ -21,7 +21,7 @@ For a home solar owner, the tool:
 
 ```
 git clone <repo-link>
-py -m pip install -r RequiredLib.txt
+py -m pip install -r requirements.txt
 py -m streamlit run app.py
 ```
 
