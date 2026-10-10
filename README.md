@@ -1,6 +1,7 @@
 # Solar Prediction Model
 
 A hackathon prototype for **Track 1: Predictive Model (renewable energy forecasting and optimization)**.
+
 Deployment Link: https://dormathon-modelprototype.streamlit.app/
 
 Clone Repo method below.
