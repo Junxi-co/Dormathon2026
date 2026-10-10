@@ -1,6 +1,9 @@
 # Solar Prediction Model
 
 A hackathon prototype for **Track 1: Predictive Model (renewable energy forecasting and optimization)**.
+Deployment Link: https://dormathon-modelprototype.streamlit.app/
+
+Clone Repo method below.
 
 ## What it does
 
@@ -20,9 +23,13 @@ For a home solar owner, the tool:
 ## How to install and run
 
 ```
+First Method: Run on terminal
 git clone <repo-link>
 py -m pip install -r requirements.txt
 py -m streamlit run app.py
+
+Second Method: Deployment Link
+https://dormathon-modelprototype.streamlit.app/
 ```
 
 The app opens in your browser. Press one of the three scenario buttons to see the result.
