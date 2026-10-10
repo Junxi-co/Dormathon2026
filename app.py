@@ -220,7 +220,7 @@ with st.expander("📊 Quick forecast glance", expanded=False):
     chart_data = pd.DataFrame({
         "kWh": [plan["forecast_kwh"], typical_kwh],
     }, index=["Tomorrow", "Typical good day"])
-    st.bar_chart(chart_data, use_container_width=True, height=160)
+    st.bar_chart(chart_data, use_container_width=True, height=260)
     st.caption(
         f"Tomorrow: {plan['forecast_kwh']:.1f} kWh  |  "
         f"Typical: {typical_kwh:.1f} kWh"
