@@ -41,7 +41,3 @@ Draft: The owner needs a decision, not a chart. A short plain-language answer is
 - **"Is a 22% dust loss realistic?"** It is higher than the typical 5% from NREL and 4.5% from a Malaysian study. We call it our simulated worst case, not a typical figure.
 - **"A dusty week costs less than one cleaning. So what does the app save?"** Correct, a short dusty spell does not pay for a cleaning (assumed RM 18 vs RM 150+). The app's value is telling the owner when dust has gone on long enough to be worth cleaning, and catching faults, which cost far more.
 - **"Why is the dust loss still there after Feb 17 in your
-
-## Questions we still can't answer well (fill in after rehearsal)
-- [QUESTION]
-- [QUESTION]
