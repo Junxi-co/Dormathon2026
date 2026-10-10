@@ -22,12 +22,13 @@ There is no dashboard and no login. The owner gets a short answer they can act o
 
 ## How to install and run
 
+```
 cd ..
 git clone <your-repo-link> test-clone
 cd test-clone
 py -m pip install -r requirements.txt
 py -m streamlit run app.py
-
+```
 
 Python version: [TO CONFIRM]
 
