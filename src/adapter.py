@@ -99,8 +99,8 @@ def adapt_plan(plan: dict) -> dict:
 
 def adapt_issues(issues: pd.DataFrame, df: pd.DataFrame) -> pd.DataFrame:
     """
-    Convert pipeline's issue table (start, end, duration_hours, kwh_lost, ...)
-    into explain's table: type, gap_pct, days, cost_lost, rank.
+    Convert pipeline issue table (start, end, duration_hours, kwh_lost, ...)
+    into explain table: type, gap_pct, days, cost_lost, rank.
     Safe to call on a table that is already in the explain format.
     """
     if issues is not None and "gap_pct" in issues.columns:
