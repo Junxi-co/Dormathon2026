@@ -22,10 +22,12 @@ There is no dashboard and no login. The owner gets a short answer they can act o
 
 ## How to install and run
 
-```
-pip install -r requirements.txt
-streamlit run app.py
-```
+cd ..
+git clone <your-repo-link> test-clone
+cd test-clone
+py -m pip install -r requirements.txt
+py -m streamlit run app.py
+
 
 Python version: [TO CONFIRM]
 
@@ -59,24 +61,3 @@ The app opens in your browser. Press one of the three scenario buttons to see th
 | **Categorize** | Say what kind of problem it is | [PROBLEM TYPES WE COVER, TO CONFIRM] |
 | **Prioritize** | Rank problems by money lost | [HOW MONEY LOST IS CALCULATED, see docs/assumptions.md, TO CONFIRM] |
 | **Explain** | Tell the owner what to do in plain language | [HOW THE MESSAGE IS GENERATED, TO CONFIRM] |
-
-## What we deliberately did not build
-
-We built only what is needed to prove the idea and run the demo. [EDIT THIS LIST TO MATCH REALITY]
-
-- **No login or user accounts.** The owner should get an answer immediately.
-- **No generic dashboard.** The owner needs a decision, not a page of charts.
-- **No live connection to a real inverter.** [TO CONFIRM: whether we use real or simulated data]
-- **No mobile app or notifications.** The demo is a single web app.
-- **No deep learning model.** [REASON, TO CONFIRM]
-
-## Data and honesty note
-
-[DESCRIBE THE DATA WE USE, real or simulated, and where it came from, TO CONFIRM.]
-All impact numbers are assumptions listed in `docs/assumptions.md` and are marked TO CONFIRM until we have a source.
-
-## Team
-
-- Member A: [NAME, ROLE]
-- Member B: [NAME, ROLE]
-- Member C: [NAME], product, validation and pitch
