@@ -1,8 +1,12 @@
- Tomorrow's Solar Plan
+# Solar Prediction Model
 
 A hackathon prototype for Track 1: Predictive Model (renewable energy forecasting and optimization).
 
- What it does
+Deployment Link: https://dormathon-modelprototype.streamlit.app/
+
+Clone Repo method below.
+
+## What it does
 
 For a home solar owner, the tool:
 1. Forecasts tomorrow's solar output.
@@ -12,32 +16,32 @@ For a home solar owner, the tool:
 
 There is no dashboard and no login. The owner gets a short answer they can act on.
 
-The problem and the user
+##The problem and the user
 
 User: A home solar owner who does not closely watch their system.
 Problem:Output can drop for days before the owner notices, and the owner may not know the cause or what to do about it. A 2015 [Pecan Street study](https://pecanstreet.org/tags/app) found that minor solar faults can cut production for days or weeks, and in most cases the homeowners had no idea. Its CEO called it "a $5 issue to fix" that still loses the owner value. One homeowner reported a big drop in output that only came to light through a large utility bill ([The Cool Down, 2026](https://www.thecooldown.com/green-home/tesla-solar-output-repair-case-stalled/)). Another found their system had not reported production since 2021 ([The Cool Down](https://www.thecooldown.com/?p=790893)). Existing inverter apps [WHAT THEY DO AND DON'T DO, TO CONFIRM FROM OUR COMPARISON CHECKLIST].Evidence from real people: 
 
-**The question we are trying to answer:** Does the model help someone make a better decision, and can we prove it? Our proof is in `results/metrics.md` [TO CONFIRM THIS FILE EXISTS AND IS FILLED IN].
+**The question we are trying to answer:** Does the model help someone make a better decision, and can we prove it? Our proof is in `results/metrics.md`
 
 ## How to install and run
 
 ```
-pip install -r requirements.txt
-streamlit run app.py
-```
+First Method: Run on terminal
+git clone <repo-link>
+py -m pip install -r requirements.txt
+py -m streamlit run app.py
 
-Python version: [TO CONFIRM]
+Second Method: Deployment Link
+https://dormathon-modelprototype.streamlit.app/
+```
 
 The app opens in your browser. Press one of the three scenario buttons to see the result.
 
 ## Repo structure
 
-[TO CONFIRM: check this against the actual folders before submitting]
-
 ```
 .
 ├── app.py                 # The Streamlit app (demo)
-├── requirements.txt       # Python dependencies
 ├── src/                   # Model and logic code
 ├── results/
 │   └── metrics.md         # Proof numbers used in the pitch
@@ -60,7 +64,7 @@ The app opens in your browser. Press one of the three scenario buttons to see th
 
 ## What we deliberately did not build
 
-We built only what is needed to prove the idea and run the demo. [EDIT THIS LIST TO MATCH REALITY]
+We built only what is needed to prove the idea and run the demo.
 
 - **No login or user accounts.** The owner should get an answer immediately.
 - **No generic dashboard.** The owner needs a decision, not a page of charts.
@@ -70,11 +74,10 @@ We built only what is needed to prove the idea and run the demo. [EDIT THIS LIST
 
 ## Data and honesty note
 
-[DESCRIBE THE DATA WE USE, real or simulated, and where it came from, TO CONFIRM.]
 All impact numbers are assumptions listed in `docs/assumptions.md` and are marked TO CONFIRM until we have a source.
 
 ## Team
 
-- Member A: Jun Xi, 
-- Member B: Hong Jun, 
-- Member C: Cheng Hao, product, validation and pitch
+- Member A: Jun Xi
+- Member B: Hong Jun 
+- Member C: Cheng Hao
