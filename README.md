@@ -15,8 +15,7 @@ There is no dashboard and no login. The owner gets a short answer they can act o
 The problem and the user
 
 User: A home solar owner who does not closely watch their system.
-Problem: Output can drop for days before the owner notices, and the owner may not know the cause or what to do about it. Existing inverter apps [WHAT THEY DO AND DON'T DO, TO CONFIRM FROM OUR COMPARISON CHECKLIST].
-Evidence from real people:** "[INSERT REAL QUOTE]" ([NAME OR INITIALS], [DATE])
+Problem:Output can drop for days before the owner notices, and the owner may not know the cause or what to do about it. A 2015 [Pecan Street study](https://pecanstreet.org/tags/app) found that minor solar faults can cut production for days or weeks, and in most cases the homeowners had no idea. Its CEO called it "a $5 issue to fix" that still loses the owner value. One homeowner reported a big drop in output that only came to light through a large utility bill ([The Cool Down, 2026](https://www.thecooldown.com/green-home/tesla-solar-output-repair-case-stalled/)). Another found their system had not reported production since 2021 ([The Cool Down](https://www.thecooldown.com/?p=790893)). Existing inverter apps [WHAT THEY DO AND DON'T DO, TO CONFIRM FROM OUR COMPARISON CHECKLIST].Evidence from real people: 
 
 **The question we are trying to answer:** Does the model help someone make a better decision, and can we prove it? Our proof is in `results/metrics.md` [TO CONFIRM THIS FILE EXISTS AND IS FILLED IN].
 
