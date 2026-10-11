@@ -86,7 +86,7 @@ Measured on our test data (details in [`results/metrics.md`](results/metrics.md)
 - **Detection:** caught 2 of 2 injected faults (one dust build-up, one equipment fault).
 - **False alarms:** 1 on the clean "normal" scenario.
 - **Robustness:** still caught the fault with extra noise added and 5% of rows dropped.
-- **Forecast accuracy:** the model is compared against the "same hour yesterday" baseline; see `results/metrics.md` for the numbers.
+- **Forecast accuracy:** compared with "same hour yesterday", forecast error was 54.4% lower on the normal scenario and 46.9% lower on the fault scenario, but worse on the dusty scenario (the dusty week is where output falls below what a clean system should produce).
 
 ---
 
