@@ -14,10 +14,8 @@ Deployed App: https://dormathon-modelprototype.streamlit.app/
 4. [How it works: Detect, Categorize, Prioritize, Explain](#how-it-works-detect-categorize-prioritize-explain)
 5. [Results](#results)
 6. [Repo structure](#repo-structure)
-7. [What we deliberately did not build](#what-we-deliberately-did-not-build)
-8. [Data and honesty note](#data-and-honesty-note)
-9. [Limitations](#limitations)
-10. [Team](#team)
+7. [Limitations](#limitations)
+8. [Team](#team)
 
 ---
 
