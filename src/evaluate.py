@@ -8,7 +8,8 @@ results/metrics.md with five sections:
   (b) Fault detection    – injected faults found vs missed
   (c) False alarms       – false positives on the clean "normal" scenario
   (d) Robustness test    – add noise + missing values, re-run detection
-  (e) Impact estimate    – £ / kWh saved if a fault is caught N days earlier
+  (e) Impact estimate(50 kW test system, US$) *This is the large test system. The home-sized example in RM used in the pitch is in `docs/assumptions.md`.*   – £ / kWh saved if a fault is caught N days earlier
+
 
 Run from the repo root:
     py src/evaluate.py
